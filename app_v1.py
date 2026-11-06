@@ -85,7 +85,7 @@ Game Rules:
 - Allow the player to ask questions, explore freely, and test solutions in natural language.
 """
 
-def generate_v1_response(messages, api_key=None, model_name="gemini-2.5-flash"):
+def generate_v1_response(messages, api_key=None, model_name="gemini-3.8-flash"):
     """Generate response from Gemini or fallback mock generator."""
     if api_key and genai is not None:
         try:
@@ -95,11 +95,22 @@ def generate_v1_response(messages, api_key=None, model_name="gemini-2.5-flash"):
             for msg in messages:
                 contents.append(f"{msg['role'].upper()}: {msg['content']}")
             prompt = V1_SYSTEM_PROMPT + "\n\nConversation So Far:\n" + "\n".join(contents) + "\n\nAI GAME MASTER:"
-            response = client.models.generate_content(
-                model=model_name,
-                contents=prompt
-            )
-            return response.text
+            
+            # Primary model attempt with fallback to 2.0/1.5 if 404
+            try:
+                response = client.models.generate_content(
+                    model=model_name,
+                    contents=prompt
+                )
+                return response.text
+            except Exception as model_err:
+                if "404" in str(model_err) and model_name != "gemini-2.0-flash":
+                    fallback_resp = client.models.generate_content(
+                        model="gemini-2.0-flash",
+                        contents=prompt
+                    )
+                    return fallback_resp.text
+                raise model_err
         except Exception as e:
             st.warning(f"Gemini API error ({e}). Falling back to simulation mode.")
 
@@ -150,7 +161,7 @@ def generate_v1_response(messages, api_key=None, model_name="gemini-2.5-flash"):
 with st.sidebar:
     st.header("⚙️ Game Controls")
     api_key_input = st.text_input("Gemini API Key (optional)", type="password", value=os.getenv("GEMINI_API_KEY", ""))
-    selected_model = st.selectbox("Gemini Model", ["gemini-2.5-flash", "gemini-1.5-flash", "gemini-1.5-pro"])
+    selected_model = st.selectbox("Gemini Model", ["gemini-3.8-flash", "gemini-2.0-flash", "gemini-1.5-flash"])
     
     st.markdown("---")
     st.markdown("### 📜 Room Interactive Objects")

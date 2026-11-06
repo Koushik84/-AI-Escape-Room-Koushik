@@ -63,7 +63,7 @@ CRITICAL OPERATIONAL RULES:
 6. If the engine reports the player escaped, conclude with triumphant narrative and include "[GAME WON]".
 """
 
-def generate_v2_narrative(player_input, engine_outcome, current_state, api_key=None, model_name="gemini-2.5-flash"):
+def generate_v2_narrative(player_input, engine_outcome, current_state, api_key=None, model_name="gemini-3.8-flash"):
     """Ask Gemini to narrate the engine-validated outcome."""
     if api_key and genai is not None:
         try:
@@ -80,11 +80,21 @@ def generate_v2_narrative(player_input, engine_outcome, current_state, api_key=N
                 f"Escaped: {engine_outcome.get('escaped')}\n\n"
                 f"Generate the atmospheric Game Master narration now:"
             )
-            response = client.models.generate_content(
-                model=model_name,
-                contents=prompt
-            )
-            return response.text
+            
+            try:
+                response = client.models.generate_content(
+                    model=model_name,
+                    contents=prompt
+                )
+                return response.text
+            except Exception as model_err:
+                if "404" in str(model_err) and model_name != "gemini-2.0-flash":
+                    fallback_resp = client.models.generate_content(
+                        model="gemini-2.0-flash",
+                        contents=prompt
+                    )
+                    return fallback_resp.text
+                raise model_err
         except Exception as e:
             # Fallback to local narrative generator if offline/network error
             pass
@@ -129,7 +139,7 @@ if "messages_v2" not in st.session_state:
 with st.sidebar:
     st.header("🛡️ Version 2 Controls")
     api_key_input = st.text_input("Gemini API Key", type="password", value=os.getenv("GEMINI_API_KEY", ""))
-    selected_model = st.selectbox("Gemini Model", ["gemini-2.5-flash", "gemini-1.5-flash", "gemini-1.5-pro"])
+    selected_model = st.selectbox("Gemini Model", ["gemini-3.8-flash", "gemini-2.0-flash", "gemini-1.5-flash"])
     
     st.markdown("---")
     st.subheader("🎒 Player Inventory")
