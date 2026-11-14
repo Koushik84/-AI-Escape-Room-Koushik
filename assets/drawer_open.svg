@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="100%">
+  <defs>
+    <linearGradient id="goldKey" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#854d0e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="280" fill="#0b0f19" rx="8"/>
+  <rect x="30" y="30" width="740" height="220" rx="6" fill="#1c140d" stroke="#523924" stroke-width="3"/>
+  <rect x="50" y="50" width="700" height="180" rx="4" fill="#3b0764" stroke="#581c87" stroke-width="2"/> <!-- Velvet lining -->
+  <text x="400" y="42" fill="#4ade80" font-size="15" font-family="Georgia, serif" font-weight="bold" letter-spacing="2" text-anchor="middle">✨ DRAWER UNLOCKED — CONTENTS REVEALED</text>
+
+  <!-- Heavy Brass Key -->
+  <g transform="translate(140, 100)">
+    <circle cx="40" cy="40" r="26" fill="none" stroke="url(#goldKey)" stroke-width="10"/>
+    <circle cx="40" cy="40" r="14" fill="#3b0764"/>
+    <rect x="66" y="34" width="130" height="12" rx="3" fill="url(#goldKey)"/>
+    <!-- Key teeth -->
+    <rect x="160" y="46" width="10" height="20" rx="2" fill="url(#goldKey)"/>
+    <rect x="180" y="46" width="12" height="26" rx="2" fill="url(#goldKey)"/>
+    <text x="110" y="105" fill="#fef08a" font-size="14" font-weight="bold" font-family="sans-serif" text-anchor="middle">🗝️ Heavy Brass Key</text>
+  </g>
+
+  <!-- Magnifying Glass -->
+  <g transform="translate(480, 85)">
+    <circle cx="50" cy="50" r="38" fill="#38bdf8" fill-opacity="0.15" stroke="url(#goldKey)" stroke-width="7"/>
+    <line x1="78" y1="78" x2="140" y2="135" stroke="url(#goldKey)" stroke-width="12" stroke-linecap="round"/>
+    <line x1="82" y1="82" x2="136" y2="131" stroke="#451a03" stroke-width="8" stroke-linecap="round"/>
+    <text x="100" y="130" fill="#fef08a" font-size="14" font-weight="bold" font-family="sans-serif" text-anchor="middle">🔍 Brass Magnifying Glass</text>
+  </g>
+</svg>

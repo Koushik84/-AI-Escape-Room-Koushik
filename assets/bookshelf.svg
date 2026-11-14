@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%">
+  <rect width="400" height="240" fill="#18120c" rx="8"/>
+  <rect x="20" y="20" width="360" height="200" rx="4" fill="#241a12" stroke="#4a3728" stroke-width="4"/>
+  <line x1="30" y1="120" x2="370" y2="120" stroke="#5a4332" stroke-width="8"/>
+  <line x1="30" y1="190" x2="370" y2="190" stroke="#5a4332" stroke-width="8"/>
+  <!-- Top Shelf Decorative books -->
+  <rect x="40" y="45" width="25" height="70" fill="#3f3f46" rx="2"/>
+  <rect x="68" y="50" width="20" height="65" fill="#52525b" rx="2"/>
+  <rect x="91" y="40" width="30" height="75" fill="#3f3f46" rx="2"/>
+  <!-- Middle Shelf: The 4 Clue Books -->
+  <g>
+    <rect x="70" y="126" width="45" height="60" rx="3" fill="#dc2626" stroke="#b91c1c" stroke-width="2"/>
+    <text x="92" y="162" fill="#ffffff" font-size="22" font-weight="bold" font-family="Georgia, serif" text-anchor="middle">7</text>
+    <text x="92" y="180" fill="#fca5a5" font-size="9" text-anchor="middle">Astronomy</text>
+
+    <rect x="130" y="130" width="45" height="56" rx="3" fill="#2563eb" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="152" y="162" fill="#ffffff" font-size="22" font-weight="bold" font-family="Georgia, serif" text-anchor="middle">3</text>
+    <text x="152" y="180" fill="#93c5fd" font-size="9" text-anchor="middle">Botany</text>
+
+    <rect x="190" y="124" width="45" height="62" rx="3" fill="#16a34a" stroke="#15803d" stroke-width="2"/>
+    <text x="212" y="162" fill="#ffffff" font-size="22" font-weight="bold" font-family="Georgia, serif" text-anchor="middle">9</text>
+    <text x="212" y="180" fill="#86efac" font-size="9" text-anchor="middle">Cryptology</text>
+
+    <rect x="250" y="128" width="45" height="58" rx="3" fill="#18181b" stroke="#52525b" stroke-width="2"/>
+    <text x="272" y="162" fill="#ffffff" font-size="22" font-weight="bold" font-family="Georgia, serif" text-anchor="middle">2</text>
+    <text x="272" y="180" fill="#cbd5e1" font-size="9" text-anchor="middle">Dynamite</text>
+  </g>
+</svg>

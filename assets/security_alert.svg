@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="100%">
+  <rect width="800" height="180" fill="#2a0808" rx="8" stroke="#ef4444" stroke-width="3"/>
+  <text x="400" y="55" fill="#fca5a5" font-size="18" font-family="sans-serif" font-weight="bold" letter-spacing="3" text-anchor="middle">⚠️ SECURITY PROTOCOL ENGAGED: OVERRIDE REJECTED</text>
+  <text x="400" y="95" fill="#ffffff" font-size="14" font-family="Georgia, serif" text-anchor="middle">Mechanical tumblers and numeric locks are bound by physical laws.</text>
+  <text x="400" y="125" fill="#f87171" font-size="13" font-family="monospace" text-anchor="middle">STATUS: INJECTION BLOCKED • STATE UNTOUCHED</text>
+</svg>

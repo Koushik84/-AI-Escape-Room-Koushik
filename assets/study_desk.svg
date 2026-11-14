@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%">
+  <rect width="400" height="240" fill="#18120c" rx="8"/>
+  <!-- Desk top -->
+  <rect x="30" y="90" width="340" height="120" rx="6" fill="#2d1c12" stroke="#543725" stroke-width="4"/>
+  <!-- Diary -->
+  <rect x="130" y="110" width="140" height="80" rx="4" fill="#4c1d95" stroke="#7c3aed" stroke-width="2"/>
+  <line x1="200" y1="110" x2="200" y2="190" stroke="#a78bfa" stroke-width="2"/>
+  <circle cx="200" cy="150" r="8" fill="#eab308"/>
+  <circle cx="200" cy="150" r="3" fill="#1e1b4b"/>
+  <!-- Antique Lamp -->
+  <path d="M 70 170 L 100 170 L 90 120 L 80 120 Z" fill="#d97706"/>
+  <path d="M 65 120 Q 85 90 105 120 Z" fill="#047857" stroke="#065f46" stroke-width="2"/>
+  <circle cx="85" cy="130" r="15" fill="#fef08a" opacity="0.6"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="100%">
+  <rect width="800" height="280" fill="#0d0d12" rx="8"/>
+  <!-- Parchment paper pages -->
+  <rect x="120" y="25" width="560" height="230" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="3"/>
+  <line x1="400" y1="25" x2="400" y2="255" stroke="#d97706" stroke-width="2" stroke-dasharray="4,4"/>
+  
+  <text x="400" y="55" fill="#78350f" font-size="18" font-family="Georgia, serif" font-weight="bold" letter-spacing="2" text-anchor="middle">THE CIPHER OF FREEDOM</text>
+  <line x1="240" y1="65" x2="560" y2="65" stroke="#92400e" stroke-width="1.5"/>
+
+  <text x="400" y="110" fill="#1e1b4b" font-size="16" font-family="Georgia, serif" font-style="italic" text-anchor="middle">"The hour of freedom arrives when midnight shadows meet..."</text>
+  
+  <rect x="220" y="140" width="360" height="60" rx="4" fill="#fef9c3" stroke="#b45309" stroke-width="2"/>
+  <text x="400" y="180" fill="#991b1b" font-size="28" font-weight="bold" font-family="Georgia, serif" letter-spacing="6" text-anchor="middle">IV - VIII - II - VI</text>
+  
+  <text x="400" y="230" fill="#451a03" font-size="13" font-family="monospace" text-anchor="middle">(Translates to: 4 - 8 - 2 - 6)</text>
+</svg>

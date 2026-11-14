@@ -281,3 +281,4 @@ Security best practices are enforced:
 2. **Template committed**: `.env.example` provides the required keys without exposing actual tokens.
 3. **Sidebar override**: Streamlit sidebars allow entering an API key per session without writing to disk.
 4. **Architectural isolation**: In Version 2, secrets are strictly confined to the backend Python engine and are never passed to the LLM prompt.
+

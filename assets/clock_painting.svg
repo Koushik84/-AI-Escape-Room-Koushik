@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="100%">
+  <rect width="400" height="240" fill="#111827" rx="8"/>
+  <rect x="60" y="20" width="280" height="200" rx="6" fill="#1f2937" stroke="#d97706" stroke-width="8"/>
+  <circle cx="200" cy="120" r="70" fill="#030712" stroke="#f59e0b" stroke-width="3"/>
+  <!-- Clock numerals -->
+  <text x="200" y="70" fill="#fbbf24" font-size="16" font-family="serif" text-anchor="middle">XII</text>
+  <text x="255" y="125" fill="#fbbf24" font-size="16" font-family="serif" text-anchor="middle">III</text>
+  <text x="200" y="175" fill="#fbbf24" font-size="16" font-family="serif" text-anchor="middle">VI</text>
+  <text x="145" y="125" fill="#fbbf24" font-size="16" font-family="serif" text-anchor="middle">IX</text>
+  <!-- Clock hands pointing towards 4 and 8 -->
+  <line x1="200" y1="120" x2="238" y2="150" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+  <line x1="200" y1="120" x2="160" y2="150" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="200" cy="120" r="5" fill="#fef3c7"/>
+</svg>

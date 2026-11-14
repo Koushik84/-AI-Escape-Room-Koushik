@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="100%">
+  <rect width="800" height="280" fill="#090d16" rx="8"/>
+  <rect x="40" y="20" width="720" height="240" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="4"/>
+  <circle cx="400" cy="140" r="95" fill="#020617" stroke="#fbbf24" stroke-width="3"/>
+  <text x="400" y="50" fill="#fef08a" font-size="16" font-family="Georgia, serif" font-weight="bold" letter-spacing="2" text-anchor="middle">MICROSCOPIC ENGRAVING ON CLOCK TOWER</text>
+  <text x="400" y="80" fill="#fbbf24" font-size="18" font-family="serif" text-anchor="middle">XII</text>
+  <text x="475" y="145" fill="#fbbf24" font-size="18" font-family="serif" text-anchor="middle">III</text>
+  <text x="400" y="215" fill="#fbbf24" font-size="18" font-family="serif" text-anchor="middle">VI</text>
+  <text x="325" y="145" fill="#fbbf24" font-size="18" font-family="serif" text-anchor="middle">IX</text>
+  
+  <!-- Glowing code in center of dial -->
+  <rect x="310" y="120" width="180" height="40" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+  <text x="400" y="148" fill="#38bdf8" font-size="22" font-family="monospace" font-weight="bold" letter-spacing="6" text-anchor="middle">4 - 8 - 2 - 6</text>
+</svg>

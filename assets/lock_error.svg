@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="100%">
+  <rect width="800" height="160" fill="#180b0b" rx="8" stroke="#dc2626" stroke-width="2"/>
+  <text x="400" y="60" fill="#f87171" font-size="22" font-family="monospace" font-weight="bold" letter-spacing="4" text-anchor="middle">❌ [ CODE REJECTED: ERROR ]</text>
+  <text x="400" y="100" fill="#cbd5e1" font-size="14" font-family="sans-serif" text-anchor="middle">Keypad beeps with dual error tones. Red LED pulses twice.</text>
+</svg>
